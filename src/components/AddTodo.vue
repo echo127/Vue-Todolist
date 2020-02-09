@@ -1,15 +1,32 @@
 <template>
   <div>
-    <form>
-      <input type="text" name="title" placeholder="Add todo ..." />
+    <form @submit="addTodo">
+      <input
+        type="text"
+        v-model="title"
+        name="title"
+        placeholder="Add todo ..."
+      />
       <input type="submit" value="Submit" class="btn" />
     </form>
   </div>
 </template>
 <script>
 export default {
-  name: 'AddTodo'
-};
+  name: 'AddTodo',
+  data() {
+    return {
+      title: ''
+    }
+  },
+  methods: {
+    addTodo() {
+      const newTodo = {
+        id: ''
+      }
+    }
+  }
+}
 </script>
 <style scoped>
 form {

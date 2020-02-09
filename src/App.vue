@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Header from './components/layout/Header';
-import AddTodo from './components/AddTodo';
-import Todos from './components/Todos';
+import Header from './components/layout/Header'
+import AddTodo from './components/AddTodo'
+import Todos from './components/Todos'
 export default {
   name: 'app',
   components: {
@@ -36,14 +36,14 @@ export default {
           completed: false
         }
       ]
-    };
+    }
   },
   methods: {
     deleteTodo(id) {
-      this.todos = this.todos.filter(todo => todo.id !== id);
+      this.todos = this.todos.filter(todo => todo.id !== id)
     }
   }
-};
+}
 </script>
 
 <style>
